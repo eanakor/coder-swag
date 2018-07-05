@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="136" id="5z9-Fz-V4k" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="136" id="5z9-Fz-V4k" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5z9-Fz-V4k" id="3vc-VU-Avx">
@@ -65,6 +65,7 @@
                                         <connections>
                                             <outlet property="categoryImage" destination="ZBZ-oR-Keh" id="BYe-em-5Ej"/>
                                             <outlet property="categoryTitle" destination="vwZ-W9-COT" id="aFv-4i-gxv"/>
+                                            <segue destination="Kqf-wU-Ttr" kind="showDetail" id="oyE-8o-dpa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,7 +84,6 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="5Q3-JB-Hd4"/>
                     <connections>
                         <outlet property="categoryTable" destination="Igr-WM-42n" id="fTo-Nf-VTk"/>
-                        <segue destination="Kqf-wU-Ttr" kind="show" identifier="ProductsVC" id="6wy-7T-H56"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -99,11 +99,11 @@
                         <viewControllerLayoutGuide type="bottom" id="laT-Mb-Oij"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1mO-dN-dbo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBS-SV-cyk">
-                                <rect key="frame" x="16" y="30" width="165" height="23.5"/>
+                                <rect key="frame" x="16" y="50" width="165" height="23.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="Oaz-OY-R8f"/>
                                 </constraints>
@@ -112,7 +112,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ND8-NO-Q06">
-                                <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
+                                <rect key="frame" x="0.0" y="89.5" width="375" height="577.5"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i7D-fl-U09">
                                     <size key="itemSize" width="182" height="274"/>
