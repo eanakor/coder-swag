@@ -65,7 +65,7 @@
                                         <connections>
                                             <outlet property="categoryImage" destination="ZBZ-oR-Keh" id="BYe-em-5Ej"/>
                                             <outlet property="categoryTitle" destination="vwZ-W9-COT" id="aFv-4i-gxv"/>
-                                            <segue destination="Kqf-wU-Ttr" kind="showDetail" id="oyE-8o-dpa"/>
+                                            <segue destination="Kqf-wU-Ttr" kind="showDetail" id="SB3-cc-cxD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
